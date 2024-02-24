@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h2></h2>
+    <table border="1">
+      <form action="#" method="post">
+        <tr>
+          <th colspan="2">Registration Form</th>
+        </tr>
+        <tr>
+          <td>
+            <label for="name">Enter Name:</label>
+          </td>
+          <td><input type="text" id="name" name="name" required /><br /></td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="password">Enter Password:</label>
+          </td>
+          <td>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+            /><br />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="address">Enter Address:</label>
+          </td>
+          <td>
+            <textarea id="address" name="address" required></textarea><br />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label>Select Game(s):</label>
+            <br />
+          </td>
+          <td>
+            <input type="checkbox" id="hockey" name="game" value="hockey" />
+            <label for="hockey">Hockey</label> <br />
+
+            <input type="checkbox" id="football" name="game" value="football" />
+            <label for="football">Football</label><br />
+
+            <input
+              type="checkbox"
+              id="badminton"
+              name="game"
+              value="badminton"
+            />
+            <label for="badminton">Badminton</label><br />
+
+            <input type="checkbox" id="cricket" name="game" value="cricket" />
+            <label for="cricket">Cricket</label><br />
+
+            <input
+              type="checkbox"
+              id="volleyball"
+              name="game"
+              value="volleyball"
+            />
+            <label for="volleyball">Volleyball</label>
+            <br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Gender:</label>
+          </td>
+          <td>
+            <input type="radio" id="male" name="gender" value="male" required />
+            <label for="male">Male</label>
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+              required
+            />
+            <label for="female">Female</label><br />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="age">Select Your Age:</label>
+          </td>
+          <td>
+            <select id="age" name="age" required>
+              <option value="under18">Under 18</option>
+              <option value="18to25">18-25</option>
+              <option value="26to35">26-35</option>
+              <option value="36to50">36-50</option>
+              <option value="above50">Above 50</option></select
+            ><br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="photo">Select Photo:</label>
+          </td>
+          <td><input type="file" id="photo" name="photo" /><br /></td>
+        </tr>
+        <tr align="center">
+          <td colspan="2">
+            <button type="button" onclick="alert('Clicked!')">Click Me</button>
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Submit" />
+          </td>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>
