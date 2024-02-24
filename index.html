@@ -4,10 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
+
+    <style>
+      body {
+        background-color: #f2f2f2;
+        max-width: 450px;
+      }
+
+      table {
+        width: 100%;
+        background-color: #fff;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #23508f;
+        color: white;
+      }
+
+      form {
+        padding: 16px;
+      }
+
+      button,
+      input[type="reset"],
+      input[type="submit"] {
+        background-color: #23508f;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        width: 110px;
+        margin-left: 20px;
+      }
+
+      button:hover,
+      input[type="reset"]:hover,
+      input[type="submit"]:hover {
+        background-color: #5f9aa3;
+      }
+    </style>
   </head>
   <body>
     <h2></h2>
-    <table border="1">
+    <table>
       <form action="#" method="post">
         <tr>
           <th colspan="2">Registration Form</th>
@@ -113,7 +161,7 @@
           </td>
           <td><input type="file" id="photo" name="photo" /><br /></td>
         </tr>
-        <tr align="center">
+        <tr>
           <td colspan="2">
             <button type="button" onclick="alert('Clicked!')">Click Me</button>
             <input type="reset" value="Reset" />
